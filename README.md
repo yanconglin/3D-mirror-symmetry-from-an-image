@@ -7,5 +7,6 @@ Many objects are naturally symmetric, and this symmetry can be exploited to infe
 Code will be released after cvpr ddl.
 # Train and test on ShapeNet or Pix3D datasets
 Train: `python train.py -d 0 --identifier nerd++ config/config.yaml`
+
 Test: `python eval.py -d 0 --output result.npz path/config.yaml path/checkpoint.pth.tar`
 
