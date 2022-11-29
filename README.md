@@ -20,9 +20,11 @@ Test: `python eval.py -d 0 --output result.npz path/config.yaml path/checkpoint.
 To do
 
 # Citation
+`
 @inproceedings{lin2021symmetry,
     author={Lin, Yancong and Pintea, Silvia L and van Gemert, Jan C},
     title = {{NeRD++}: Improved 3D-mirror symmetry learning from a single image},
     year = {2022},
     booktitle = {BMVC},
 }
+`
