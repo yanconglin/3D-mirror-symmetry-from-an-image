@@ -9,7 +9,14 @@ Code will be released after cvpr ddl.
 Please refer to the baseline work [NeRD](https://github.com/zhou13/nerd#downloading-the-processed-datasets) for details.
 
 # Train and test on ShapeNet or Pix3D datasets
-Train: `python train.py -d 0 --identifier nerd++ config/config.yaml`
+Train: `python train.py -d 0 --identifier nerd++ config/config.yaml` 
 
 Test: `python eval.py -d 0 --output result.npz path/config.yaml path/checkpoint.pth.tar`
+
+
+
+
+# Checkpoints:
+To do
+
 
