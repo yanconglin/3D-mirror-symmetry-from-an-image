@@ -31,7 +31,7 @@ class SymmetryNet(nn.Module):
             nn.BatchNorm2d(CM.C),
             nn.ReLU(inplace=True),
         )
-        """check [this](https://github.com/yanconglin/3D-mirror-symmetry-from-an-image/blob/056753dcf490c5355cf0b4cae281c5974d72f3af/sym/models/sphere/img2sphere.py#L89) for detailed explanation of the hyper parameter 'side_flag'/"""
+        """check IMG2SPHERE for detailed explanation of the hyper parameter 'side_flag' """
         self.img2sphere = IMG2SPHERE(CM.D, CM.depth_min, CM.depth_max, side_flag=1e16)
         self.pairconv = PairConv(C_in=CM.D, C_out=16)
         self.dgcn1 = SimpleDGCN(nf=[CM.C_sphere, CM.C_sphere, CM.C_sphere],
