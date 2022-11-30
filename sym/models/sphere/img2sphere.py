@@ -86,7 +86,11 @@ class IMG2SPHERE_Function(Function):
             None  # side_flag
         )
 
-
+"""side_flag: a hyper-parameter that distinguishes points located on a certain side (far/near) of the symmetry plane. 
+side_flag=0.0: calculate mirrors for those points on the near side of the plane only (closer to the object), 
+such that the mirrored near side resembles the original far side. This can be used as self-supervison for unsupervised learning. 
+However, this idea did not work out despite of tremendous efforts due the occlusion.
+Please let me know if you have a solution. """
 class IMG2SPHERE(nn.Module):
     def __init__(self, D, depth_min, depth_max, side_flag=0.0):
         super(IMG2SPHERE, self).__init__()
@@ -107,8 +111,6 @@ class IMG2SPHERE(nn.Module):
 
 
     def forward(self, atten, planes, planes_d):
-        # input: attn [B, HW, HW]
-        # print('input', atten.shape, planes.shape, planes_d.shape)
         output = IMG2SPHERE_Function.apply(
             atten.contiguous(),
             self.gamma.contiguous(),
