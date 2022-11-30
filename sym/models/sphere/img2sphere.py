@@ -87,7 +87,8 @@ class IMG2SPHERE_Function(Function):
         )
 
 """side_flag: a hyper-parameter that distinguishes points located on a certain side (far/near) of the symmetry plane. 
-side_flag=0.0: calculate mirrors for those points on the near side of the plane only (closer to the object), 
+side_flag=0.0: calculate mirrors for those points on the near side of the plane only (closer to the object);
+side_flag=inf_max: calculate mirrors for all points no matter which side;
 such that the mirrored near side resembles the original far side. This can be used as self-supervison for unsupervised learning. 
 However, this idea did not work out despite of tremendous efforts due the occlusion.
 Please let me know if you have a solution. """
