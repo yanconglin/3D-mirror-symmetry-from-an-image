@@ -3,8 +3,6 @@
 
 [Yancong Lin](https://yanconglin.github.io/), and [Silvia Laura Pintea](https://silvialaurapintea.github.io/), and [Jan C. van Gemert](http://jvgemert.github.io/)
 
-E-mail: y.lin-1ATtudelftDOTnl
-
 Vision Lab, Delft University of Technology, the Netherlands
 
 
