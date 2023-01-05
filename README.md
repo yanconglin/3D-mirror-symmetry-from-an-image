@@ -1,6 +1,6 @@
 # NeRD++: Improved 3D-mirror symmetry learning from a single image 
 
-[NeRD++](https://arxiv.org/abs/2112.12579) is a follow-up work over [NeRD: Neural 3D Reflection Symmetry Detector](https://arxiv.org/abs/2105.03211), which aims to detect the dominant mirror symmetry plane from a single-view image. This work has been accepted at BMVC 2022.
+[NeRD++: Improved 3D-mirror symmetry learning from a single image](https://arxiv.org/abs/2112.12579) is a follow-up work over [NeRD: Neural 3D Reflection Symmetry Detector](https://arxiv.org/abs/2105.03211), which aims to detect the dominant mirror symmetry plane from a single-view image. This work has been accepted at BMVC 2022.
 
 [Yancong Lin](https://yanconglin.github.io/), and [Silvia Laura Pintea](https://silvialaurapintea.github.io/), and [Jan C. van Gemert](http://jvgemert.github.io/)
 
