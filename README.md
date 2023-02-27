@@ -16,7 +16,7 @@ This repo is not yet complete, still in progress!
 Please refer to the baseline work [NeRD](https://github.com/zhou13/nerd#downloading-the-processed-datasets) for details.
 
 # Installation
-To do
+```conda env create -f environment.yml```
 
 # Train and test on ShapeNet or Pix3D datasets
 Train: `python train.py -d 0 --identifier nerd++ config/config.yaml` 
